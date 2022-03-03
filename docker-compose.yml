@@ -1,0 +1,18 @@
+version: "3"
+services:
+  frontend:
+    build: ./client
+    restart: on-failure
+    ports:
+      - "3000:3000"
+  backend:
+    build: ./server
+    restart: on-failure
+    ports:
+      - "5000:5000"
+    volumes:
+      - ~/.aws/:/root/.aws
+  redis:
+    image: "redis:latest"
+    ports:
+      - "6379:6379"

@@ -1,0 +1,64 @@
+/* Some of these are referenced from [https://github.com/shanjairaj7/News-Website-using-React/blob/master/src/app.css]*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: inter;
+  width: 80%;
+  margin: 0 auto;
+  background: rgb(251, 254, 255);
+}
+
+.ag-theme-balham {
+  height: 500px;
+  width: 700px;
+  margin: 0 auto;
+}
+.newsArticles {
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.news {
+  max-width: 500px;
+  padding: 30px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+}
+
+.newsTitle {
+  padding-bottom: 10px;
+  border-bottom: 1px solid lightgray;
+}
+
+.head__text {
+  margin-top: 30px;
+}
+
+.newsContent {
+  padding-top: 10px;
+  line-height: 25px;
+  font-size: 14px;
+  padding-bottom: 0;
+}
+
+.newsAuthor {
+  margin-right: 10px;
+  color: purple;
+}
+
+.newsDate {
+  margin-right: 10px;
+}
+
+.newsLink,
+.newsDate {
+  display: inline-block;
+  margin-top: 10px;
+  color: rgb(122, 122, 122);
+}
